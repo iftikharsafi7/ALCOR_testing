@@ -1,0 +1,9 @@
+
+
+FPGA data packet:
+
+1. ADDRESS (16 bit) = FPGA address: always "dcba"
+
+2. packet_number (32 bit) = packet number: starts from 0, +1 for each packet
+
+3. pkt_len (16 bit) = packet length: indicates number of bytes of the packet, after that we have to read (pkt_len - 8) bytes to complete the packet
